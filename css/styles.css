@@ -150,11 +150,11 @@
 }
 .box {
   position: relative;
-  bottom: 20vh;
+  bottom: 22vh;
   z-index: 1;
 }
 .box img {
-  height: 80vh;
+  height: 89vh;
   margin: 0 auto;
 }
 .box-shadow {
@@ -162,16 +162,135 @@
   bottom: 50vh;
   left: -7vh;
   z-index: -1;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 .box-shadow img {
   height: 45vh;
   margin: 0 auto;
 }
+.scroll {
+  position: absolute;
+  top: 38%;
+  left: 35%;
+  z-index: 2;
+}
+.scroll p {
+  color: #333d3c;
+  font-family: "ff-good-headline-web-pro-ext";
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  margin-bottom: 10px;
+}
+.scroll .vertical-line {
+  width: 2px;
+  height: 85px;
+  background-color: #333d3c;
+  margin: 0 auto;
+}
+.cloud {
+  position: absolute;
+  left: -69vh;
+  bottom: 67vh;
+  width: 14vw;
+}
+.ball-on-cloud {
+  position: absolute;
+  left: -55vh;
+  bottom: 75vh;
+  width: 4vw;
+}
+.ball-on-box {
+  position: absolute;
+  left: 29vh;
+  bottom: 81vh;
+  width: 1vw;
+  z-index: 2;
+}
+.ball-on-bean {
+  position: absolute;
+  left: 86vh;
+  bottom: 79vh;
+  width: 10vh;
+  z-index: 2;
+}
+.bubble-on-top {
+  position: absolute;
+  left: 63vh;
+  top: 34vh;
+  width: 11vh;
+  z-index: 2;
+}
+.bubble-above-top {
+  position: absolute;
+  left: 84vh;
+  top: 25vh;
+  width: 4vh;
+  z-index: 2;
+}
+.bubble-right-top-corner {
+  position: absolute;
+  left: 18vh;
+  top: 16vh;
+  width: 8vh;
+  z-index: 2;
+}
+.ball-on-left-from-text {
+  position: absolute;
+  left: 3vh;
+  top: 9vh;
+  width: 12vh;
+  z-index: 2;
+}
+.blur-ball {
+  position: absolute;
+  left: 23vh;
+  top: 9vh;
+  width: 4vh;
+  z-index: 2;
+}
+.bubble-behide-text {
+  position: absolute;
+  left: 22vh;
+  top: -7vh;
+  width: 28vh;
+  z-index: -1;
+}
+.ball-above-text {
+  position: absolute;
+  left: 22vh;
+  top: -10vh;
+  width: 4vh;
+}
+.big-bubble {
+  position: absolute;
+  left: 10vh;
+  top: -19vh;
+  width: 10vh;
+}
+.small-bubble {
+  position: absolute;
+  left: 17vh;
+  top: -14vh;
+  width: 4vh;
+}
+.first-bubble {
+  position: absolute;
+  left: 17vh;
+  top: -24vh;
+  width: 3vh;
+}
+.ball-top {
+  position: absolute;
+  left: 22vh;
+  top: -28vh;
+  width: 20vh;
+}
 .about-us {
   width: 100%;
   padding: 50px;
-  background: linear-gradient(241deg, #eee0c9 28%, rgba(202, 242, 241, 0) 57%);
+  background: linear-gradient(241deg, #eee0c9 28%, rgba(202, 242, 241, 0) 48%);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -296,6 +415,95 @@
   position: relative;
   bottom: 44vh;
   left: -21vw;
+}
+.slider-cloud {
+  position: absolute;
+  bottom: 1%;
+  left: -2%;
+  z-index: 1;
+  height: 50vh;
+}
+.carusel {
+  width: 70%;
+  height: 220px;
+  background-color: rgba(255, 242, 221, 0.6);
+  padding: 20px;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+.carusel .carusel-text {
+  flex-basis: 45%;
+}
+.carusel .carusel-text p {
+  height: 150px;
+  opacity: 0.49;
+  color: #455251;
+  font-family: 'sofia-pro';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0.07px;
+  text-align: right;
+  display: none;
+}
+.carusel .carusel-text p.display {
+  display: block;
+}
+.carusel .carusel-title {
+  height: 150px;
+  align-self: center;
+  flex-basis: 45%;
+  color: #333d3c;
+  font-family: "ff-good-headline-web-pro-ext";
+  font-weight: 600;
+  text-transform: uppercase;
+  border-left: 1px solid #333d3c;
+  padding-left: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carusel .carusel-title li {
+  font-size: 24px;
+  letter-spacing: 2.4px;
+}
+.carusel .carusel-title li.display {
+  font-size: 40px;
+  letter-spacing: 4px;
+}
+.carusel .next-slide {
+  width: 30px;
+  height: 30px;
+  background-color: #bab8ac;
+  cursor: pointer;
+  border: none;
+  border-radius: 100%;
+  position: relative;
+}
+.carusel .next-slide::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 44%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transform: rotate(-45deg);
+}
+.carusel .slider-ball {
+  position: absolute;
+  bottom: -10%;
+  right: 20%;
+  width: 60px;
+  height: 60px;
+  background: url("../img/slider-ball.png");
+  background-size: cover;
 }
 * {
   margin: 0;
