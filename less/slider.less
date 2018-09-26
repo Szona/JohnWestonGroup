@@ -1,0 +1,82 @@
+.carusel {
+    width: 70%;
+    height: 220px;
+    background-color: rgba(255, 242, 221, 0.6);
+    padding: 20px;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    .carusel-text {
+        flex-basis: 45%;
+        p {
+        height: 150px;
+        opacity: 0.49;
+        color: #455251;
+        font-family: 'sofia-pro';
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.07px;
+        text-align: right;
+        display: none;
+        &.display {
+            display: block;
+            }    
+        }
+    }
+    .carusel-title {
+        height: 150px;
+        align-self: center;
+        flex-basis: 45%;
+        color: #333d3c;
+        font-family: "ff-good-headline-web-pro-ext";
+        font-weight: 600;
+        text-transform: uppercase;
+        border-left: 1px solid #333d3c;
+        padding-left: 8%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        li {
+            font-size: 24px;
+            letter-spacing: 2.4px;
+            &.display {
+                font-size: 40px;
+                letter-spacing: 4px;
+            }
+        }
+    }
+    .next-slide {
+        width: 30px;
+        height: 30px;
+        background-color: #bab8ac;
+        cursor: pointer;
+        border: none;
+        border-radius: 100%;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 44%;
+            width: 8px;
+            height: 8px;
+            margin: -4px 0 0 -4px;
+            border-right: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            transform: rotate(-45deg);
+        }
+    }
+    .slider-ball {
+        position: absolute;
+        bottom: -10%;
+        right: 20%;
+        width: 60px;
+        height: 60px;
+        background: url("../img/slider-ball.png");
+        background-size: cover;
+    }
+}
