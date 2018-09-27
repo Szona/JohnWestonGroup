@@ -1,0 +1,126 @@
+.unpack {
+    width: 100%;
+    padding: 50px;
+    background: linear-gradient(289deg, rgb(238, 224, 201) 25%, rgba(202, 242, 241, 0) 48%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    &-title {
+        font-family:"ff-good-headline-web-pro-ext";
+        color: #333d3c;
+        font-size: 60px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 24px;
+        letter-spacing: 28.8px;
+    }
+    .descr {
+        width: 501px;
+        color: #868782;
+        font-family: "ff-good-headline-web-pro-ext";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 130px;
+    }
+}
+.block {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 100px;
+    &-title {
+        height: 20px;
+        color: #333d3c;
+        font-family: "ff-good-headline-web-pro-ext";
+        font-size: 24px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+        position: relative;
+        margin-bottom: 20px;
+        order: 1;
+        &::before {
+            content: "";
+            width: 45px;
+            height: 1px;
+            background-color: #333d3c;
+            position: absolute;
+            top: 5vh;
+        }
+    }
+    img {
+        width: auto;
+        position: absolute;
+    }
+    p {
+        width: 240px;
+        color: #868782;
+        font-family: 'sofia-pro';
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.07px;
+        order: 3;
+    }
+}
+.comfort {
+    margin-left: 7vw;
+    img {
+        right: 450px;
+    }
+}
+.safe {
+    margin-left: 25vw;
+    img {
+        left: 282px;
+        bottom: -15px;        
+    }
+    p {
+        width: 263px;
+    }
+}
+.appreciation {
+    margin-right: 8vw;
+    img {
+        right: 450px;
+    }
+}
+.counting {
+    margin-left: 59vw;
+    img {
+        width: 200px;
+        right: 450px;
+    }
+    p {
+        width: 237px;
+    }
+}
+.enthusiasm {
+    margin-left: 5vw;
+    img {
+        width: 300px;
+        right: 450px;
+        bottom: -90px;
+        }
+}
+.success {
+    width: 300px;
+    margin-left: 70vw;
+    img {
+        width: 250px;
+        right: 250px;
+        top: 50px;        
+    }
+    p {
+        width: 263px;
+    }
+}
