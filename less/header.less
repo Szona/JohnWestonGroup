@@ -101,11 +101,15 @@
     position: relative;
     bottom: 22vh;
     z-index: 1;
+    // background: url(../img/box.png);
+    // background-size: cover;
+    // width: 113%;
+    // height: 112%;
     img {
         height: 89vh;
         margin: 0 auto;
     }
-}
+ }
 .box-shadow {
     position: relative;
     bottom: 50vh;
@@ -121,7 +125,7 @@
 .scroll {
     position: absolute;
     top: 38%;
-    left: 35%;
+    left: 40.5%;
     z-index: 2;
     p {
         color: #333d3c;
@@ -237,3 +241,51 @@
     top: -28vh;
     width: 20vh;
 }
+ @media screen and (max-width: 450px) {
+     .header {
+         width: 100%;
+         height: 70vh;
+         padding: 30px  15px 0 15px;
+     }
+     .header-content {
+        width: 95%;
+        margin-top: 10vh;
+    }
+    .social-media {
+        display: none;
+    }
+    .menu-wrapper {
+        top: 15vh;
+    }
+    .title {
+        font-size: 48px;
+        text-align: center; 
+    }
+    .work-link {
+        border: 1px solid #ffffff;
+    }
+    .box {
+        bottom: 5vh;
+        margin: 0 auto;
+        img {
+            height: 35vh;
+        }
+    }
+    .box-shadow {
+        left: -2vh;
+        bottom: 20vh;
+        img {
+            height: 24vh;
+        }
+    }
+    .scroll {
+        top: 53%;
+        left: 34%; 
+        p {
+            font-size: 10px;
+        }
+        .vertical-line {
+            height: 20px;
+        }
+    }
+ }
