@@ -592,7 +592,7 @@
     height: 1px;
   }
   .slider-cloud {
-    bottom: -10%;
+    top: 53%;
     height: 24vh;
   }
 }
@@ -836,6 +836,77 @@
 .success p {
   width: 263px;
 }
+@media screen and (max-width: 450px) {
+  .unpack {
+    padding: 0;
+  }
+  .unpack-title {
+    font-size: 44px;
+    text-align: center;
+    letter-spacing: 20px;
+  }
+  .unpack .descr {
+    width: 300px;
+    margin-bottom: 75px;
+  }
+  .block {
+    width: auto;
+  }
+  .block-title::before {
+    top: 7vh;
+  }
+  .block p {
+    width: 240px;
+  }
+  .comfort {
+    margin-left: 0;
+  }
+  .comfort img {
+    right: 154px;
+    top: -37px;
+    width: 32vh;
+  }
+  .safe {
+    margin-left: 0;
+  }
+  .safe img {
+    left: 176px;
+    bottom: 102px;
+    width: 20vh;
+  }
+  .appreciation {
+    margin-right: 0;
+  }
+  .appreciation img {
+    right: 132px;
+    width: 13vh;
+    top: -68px;
+  }
+  .counting {
+    margin-left: 0;
+  }
+  .counting img {
+    width: 25vh;
+    right: 50px;
+    top: -75px;
+  }
+  .enthusiasm {
+    margin-left: 0;
+  }
+  .enthusiasm img {
+    width: 33vh;
+    right: 2px;
+    bottom: 88px;
+  }
+  .success {
+    margin-left: 0;
+  }
+  .success img {
+    width: 30vh;
+    right: 50px;
+    top: -80px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -853,4 +924,9 @@ li {
 }
 .gradient-background {
   background: linear-gradient(289deg, #eee0c9 25%, rgba(202, 242, 241, 0) 48%);
+}
+@media screen and (max-width: 450px) {
+  .gradient-background {
+    padding: 0 15px;
+  }
 }
