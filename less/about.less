@@ -1,4 +1,4 @@
-.about-us {
+.about {
     width: 100%;
     padding: 50px;
     background: linear-gradient(241deg, rgb(238, 224, 201) 28%, rgba(202, 242, 241, 0) 48%);
@@ -130,9 +130,80 @@
 }
 .slider-cloud {
         position: absolute;
-        bottom: 1%;
+        bottom: 58%;
         left: -2%;
         z-index: 1;
         height: 50vh;
     }
-
+@media screen and (max-width: 450px) {
+    .about {
+        padding: 0 15px;
+        background: linear-gradient(241deg, rgb(238, 224, 201) 14%, rgba(202, 242, 241, 0) 30%);
+    }
+    .logos {
+        margin-top: 150px;
+        height: 200px;
+        .logo2 {
+            width: 25vh;
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+        .logo-sansara {
+            margin-right: 0;
+            width: 20vh;
+            position: relative;
+            top: 5%;
+            left: -60%;
+        }
+        .sub {
+            top: -110px;
+            left: 135px;
+            font-size: 14px;
+        }
+        .bigger-ball {
+            width: 30px;
+            height: 30px;
+            bottom: 13vh;
+            left: 15vw;
+        }
+        .small-ball {
+            width: 15px;
+            height: 15px;
+            &.one {
+                bottom: 18vh;
+                left: -32vh;
+            }
+            &.two {
+                top: -37vh;
+                left: 14vw;
+            }
+        }
+    } 
+    .description {
+        justify-self: unset;
+        margin-top: 0;
+        p {
+            width: 300px;
+            height: 120px;
+        }
+        .people {
+            width: 300px;
+            height: 180px;
+            flex-direction: column;
+            flex-wrap: nowrap; 
+            justify-content: space-between;
+            button {
+                font-size: 14px;
+                margin-left: 0;
+            }
+            .line {
+                width: 45px;
+                height: 1px;
+            }
+        }
+    }
+    .slider-cloud {
+        bottom: -10%;
+        height: 24vh;
+    }
+}

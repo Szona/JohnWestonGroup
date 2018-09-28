@@ -388,7 +388,7 @@
     width: 11vh;
   }
 }
-.about-us {
+.about {
   width: 100%;
   padding: 50px;
   background: linear-gradient(241deg, #eee0c9 28%, rgba(202, 242, 241, 0) 48%);
@@ -525,7 +525,7 @@
   height: 50vh;
 }
 @media screen and (max-width: 450px) {
-  .about-us {
+  .about {
     padding: 0 15px;
     background: linear-gradient(241deg, #eee0c9 14%, rgba(202, 242, 241, 0) 30%);
   }
