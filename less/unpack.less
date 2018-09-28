@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
+    position: relative;
     &-title {
         font-family:"ff-good-headline-web-pro-ext";
         color: #333d3c;
@@ -92,7 +93,8 @@
     margin-left: 25vw;
     img {
         left: 282px;
-        bottom: -15px;        
+        bottom: -15px; 
+        z-index: 2;       
     }
     p {
         width: 263px;
@@ -134,6 +136,121 @@
         width: 263px;
     }
 }
+.bubbles-and-balls {
+    img {
+        position: absolute;
+        &.one {
+            width: 2%;
+            top: 21%;
+            left: 31%;
+        }
+        &.two {
+            width: 5%;
+            top: 30%;
+            left: 13%;
+            filter: blur(2px);
+            transform: rotate(65deg);
+        }
+        &.three {
+            width: 7%;
+            top: 19%;
+            right: 8%;
+            filter: blur(6px);
+            transform: rotate(-33deg);
+        }
+        &.four {
+            width: 3%;
+            top: 22%;
+            right: 8%;
+            transform: rotate(59deg);
+        }
+        &.five {
+            width: 3%;
+            top: 44%;
+            left: 21%;
+        }
+        &.six {
+            width: 2%;
+            top: 37%;
+            right: 5%;
+        }
+        &.seven {
+            width: 18%;
+            top: 40%;
+            right: 21%;
+            z-index: 1;
+        }
+        &.eight {
+            width: 2%;
+            top: 47%;
+            right: 23%;
+        }
+        &.nine {
+            width: 13%;
+            height: 10%;
+            top: 47%;
+            right: 3%;
+            transform: rotate(105deg) scale(1, -1);
+        }
+        &.ten {
+            width: 15%;
+            top: 58%;
+            left: -4%;
+            opacity: 0.8;
+            filter: blur(6px);
+            transform: rotate(105deg) scale(1, -1);
+        }
+        &.eleven {
+            width: 1%;
+            top: 63%;
+            left: 15%;
+            opacity: 0.8;
+            filter: blur(1px);
+        }
+        &.twelve {
+            width: 2%;
+            top: 65%;
+            left: 20%;
+        }
+        &.thirteen {
+            width: 1%;
+            top: 74%;
+            right: 20%;
+        }
+        &.fourteen {
+            width: 5%;
+            top: 96%;
+            left: 17%;
+            opacity: 0.8;
+            filter: blur(1px);
+        }
+        &.fifteen {
+            width: 4%;
+            top: 97%;
+            left: 16%;
+            opacity: 0.8;
+            filter: blur(1px);
+        }
+        &.sixteen {
+            width: 5%;
+            top: 68%;
+            right: 25%;
+            opacity: 0.8;
+            filter: blur(3px);
+            transform: rotate(90deg);
+        }
+        &.seventeen {
+            width: 3%;
+            top: 75%;
+            right: 15%;
+            opacity: 0.8;
+            filter: blur(1px);
+            // transform: rotate(90deg);
+        }
+    }
+}
+
+
 @media screen and (max-width: 450px) {
     .unpack {
         padding: 0;
