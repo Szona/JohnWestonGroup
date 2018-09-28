@@ -524,6 +524,78 @@
   z-index: 1;
   height: 50vh;
 }
+@media screen and (max-width: 450px) {
+  .about-us {
+    padding: 0 15px;
+    background: linear-gradient(241deg, #eee0c9 14%, rgba(202, 242, 241, 0) 30%);
+  }
+  .logos {
+    margin-top: 150px;
+    height: 200px;
+  }
+  .logos .logo2 {
+    width: 25vh;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .logos .logo-sansara {
+    margin-right: 0;
+    width: 20vh;
+    position: relative;
+    top: 5%;
+    left: -60%;
+  }
+  .logos .sub {
+    top: -110px;
+    left: 135px;
+    font-size: 14px;
+  }
+  .logos .bigger-ball {
+    width: 30px;
+    height: 30px;
+    bottom: 13vh;
+    left: 15vw;
+  }
+  .logos .small-ball {
+    width: 15px;
+    height: 15px;
+  }
+  .logos .small-ball.one {
+    bottom: 18vh;
+    left: -32vh;
+  }
+  .logos .small-ball.two {
+    top: -37vh;
+    left: 14vw;
+  }
+  .description {
+    justify-self: unset;
+    margin-top: 0;
+  }
+  .description p {
+    width: 300px;
+    height: 120px;
+  }
+  .description .people {
+    width: 300px;
+    height: 180px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .description .people button {
+    font-size: 14px;
+    margin-left: 0;
+  }
+  .description .people .line {
+    width: 45px;
+    height: 1px;
+  }
+  .slider-cloud {
+    bottom: -10%;
+    height: 24vh;
+  }
+}
 .carusel {
   width: 70%;
   height: 220px;
@@ -605,6 +677,39 @@
   height: 60px;
   background: url("../img/slider-ball.png");
   background-size: cover;
+}
+@media screen and (max-width: 450px) {
+  .carusel {
+    width: 300px;
+    height: auto;
+    margin-top: 120px;
+    flex-direction: column;
+    padding-bottom: 0;
+  }
+  .carusel .carusel-text p {
+    text-align: left;
+    font-size: 14px;
+  }
+  .carusel .carusel-title {
+    width: 100%;
+    flex-basis: 10%;
+    border-left: 0;
+    border-top: 1px solid #333d3c;
+    padding-top: 15%;
+    margin-top: 10%;
+  }
+  .carusel .next-slide {
+    width: 50px;
+    height: 50px;
+    left: 33%;
+    bottom: 25px;
+  }
+  .carusel .slider-ball {
+    right: 35%;
+    bottom: -5%;
+    width: 40px;
+    height: 40px;
+  }
 }
 .unpack {
   width: 100%;
