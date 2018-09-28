@@ -150,11 +150,11 @@
 }
 .box {
   position: relative;
-  bottom: 22vh;
+  bottom: 20vh;
   z-index: 1;
 }
 .box img {
-  height: 89vh;
+  height: 80vh;
   margin: 0 auto;
 }
 .box-shadow {
@@ -194,6 +194,7 @@
   left: -69vh;
   bottom: 67vh;
   width: 14vw;
+  opacity: 0.8;
 }
 .ball-on-cloud {
   position: absolute;
@@ -210,16 +211,18 @@
 }
 .ball-on-bean {
   position: absolute;
-  left: 86vh;
+  left: 86%;
   bottom: 79vh;
   width: 10vh;
+  opacity: 0.7;
   z-index: 2;
 }
 .bubble-on-top {
   position: absolute;
-  left: 63vh;
-  top: 34vh;
-  width: 11vh;
+  left: 63%;
+  top: 21%;
+  width: 10vh;
+  opacity: 0.8;
   z-index: 2;
 }
 .bubble-above-top {
@@ -231,30 +234,34 @@
 }
 .bubble-right-top-corner {
   position: absolute;
-  left: 18vh;
-  top: 16vh;
-  width: 8vh;
+  left: 11%;
+  top: 9%;
+  width: 7vh;
   z-index: 2;
 }
 .ball-on-left-from-text {
   position: absolute;
-  left: 3vh;
-  top: 9vh;
-  width: 12vh;
+  left: 4%;
+  top: 6%;
+  width: 6vh;
   z-index: 2;
 }
 .blur-ball {
   position: absolute;
-  left: 23vh;
-  top: 9vh;
-  width: 4vh;
+  left: 22%;
+  top: 5%;
+  width: 3vh;
+  filter: blur(2px);
   z-index: 2;
 }
 .bubble-behide-text {
   position: absolute;
   left: 22vh;
   top: -7vh;
-  width: 28vh;
+  width: 23vh;
+  opacity: 0.7;
+  filter: blur(1px);
+  transform: rotate(-20deg);
   z-index: -1;
 }
 .ball-above-text {
@@ -284,7 +291,7 @@
 .ball-top {
   position: absolute;
   left: 22vh;
-  top: -28vh;
+  top: -25%;
   width: 20vh;
 }
 @media screen and (max-width: 450px) {
@@ -295,7 +302,7 @@
   }
   .header-content {
     width: 95%;
-    margin-top: 10vh;
+    margin-top: 12vh;
   }
   .social-media {
     display: none;
@@ -326,7 +333,7 @@
   }
   .scroll {
     top: 53%;
-    left: 34%;
+    left: 33%;
   }
   .scroll p {
     font-size: 10px;
@@ -341,7 +348,7 @@
   }
   .bubble-on-top {
     left: 58%;
-    top: 45%;
+    top: 43%;
     width: 6vh;
   }
   .bubble-above-top {
@@ -357,7 +364,7 @@
   .ball-on-left-from-text {
     left: -5%;
     top: 9vh;
-    width: 9vh;
+    width: 5vh;
   }
   .blur-ball {
     left: 27%;
@@ -384,7 +391,7 @@
   }
   .ball-top {
     left: 43%;
-    top: -17%;
+    top: -23%;
     width: 11vh;
   }
 }
@@ -496,7 +503,7 @@
 .small-ball {
   width: 20px;
   height: 20px;
-  background: url("../img/small-ball.png");
+  background: url("../img/metal-ball.png");
   background-size: cover;
   position: relative;
 }
@@ -520,9 +527,10 @@
 .slider-cloud {
   position: absolute;
   bottom: 58%;
-  left: -2%;
+  left: -28%;
   z-index: 1;
-  height: 50vh;
+  opacity: 0.7;
+  filter: blur(3px);
 }
 @media screen and (max-width: 450px) {
   .about {
@@ -729,6 +737,16 @@
   letter-spacing: 24px;
   letter-spacing: 28.8px;
 }
+.unpack-title sup {
+  font-family: "ff-good-headline-web-pro-ext";
+  color: #868782;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  position: relative;
+  top: -18px;
+}
 .unpack .descr {
   width: 501px;
   color: #868782;
@@ -895,7 +913,7 @@
   }
   .enthusiasm img {
     width: 33vh;
-    right: 2px;
+    right: -3vh;
     bottom: 88px;
   }
   .success {
