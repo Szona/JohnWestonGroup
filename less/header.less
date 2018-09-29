@@ -51,9 +51,7 @@
     align-items: center;
     justify-content: flex-end;
     a {
-        font-family:"ff-good-headline-web-pro-ext";
-        color: #333d3c;
-        text-transform: uppercase;
+        .title();
         font-size: 18px;
         letter-spacing: 1.8px;
         font-weight: 600;
@@ -71,31 +69,31 @@
     position: relative;
 }
 .sub-title {
-    color: #333d3c;
-    font-family:"ff-good-headline-web-pro-ext";
+    .title();
     font-size: 18px;
     font-weight: 400;
-    text-transform: uppercase;
     letter-spacing: 2.4px;
 }
 .title {
-    color: #333d3c;
-    font-family:"ff-good-headline-web-pro-ext";
+    .title();
     font-size: 65px;
-    text-transform: uppercase;
     letter-spacing: 8px;
     margin-bottom: 2vh;
 }
 .work-link {
-    color: #ffffff;
-    font-family:"ff-good-headline-web-pro-ext";
+    .title();
     font-size: 18px;
     font-weight: 400;
-    text-transform: uppercase;
     letter-spacing: 2.4px;
     border: 2px solid #ffffff;
+    color: #fff;
     padding: 5px 15px;
     z-index: 2;
+    transition: all 500ms;
+    &:hover {
+        color: rgb(51, 61, 60);
+        border: 2px solid rgb(51, 61, 60);
+    }
 }
 .box {
     position: relative;
@@ -129,9 +127,7 @@
     margin: 0 auto;
     animation: bounce 2s linear infinite;
     p {
-        color: #333d3c;
-        font-family:"ff-good-headline-web-pro-ext";
-        text-transform: uppercase;
+        .title();
         font-size: 18px;
         font-weight: 600;
         letter-spacing: 1.8px;
@@ -144,8 +140,13 @@
         margin: 0 auto;
     }
 }
-.cloud {
+// 
+//   Decoration
+// 
+.decor img {
     position: absolute;
+}
+.cloud {
     left: -69vh;
     bottom: 67vh;
     width: 14vw;
@@ -153,21 +154,18 @@
     animation: bounce 4s ease-in-out infinite; 
 }
 .ball-on-cloud {
-    position: absolute;
     left: -55vh;
     bottom: 75vh;
     width: 4vw;
     animation: bounce 4s ease-in-out infinite; 
 }
 .ball-on-box {
-    position: absolute;
     left: 29vh;
     bottom: 81vh;
     width: 1vw;
     z-index: 2;
 }
 .ball-on-bean {
-    position: absolute;
     left: 86%;
     bottom: 79vh;
     width: 10vh;
@@ -176,7 +174,6 @@
     animation: skew 4s ease-in-out infinite;  
 }
 .bubble-on-top {
-    position: absolute;
     left: 63%;
     top: 21%;
     width: 10vh;
@@ -185,7 +182,6 @@
     animation: bounce 4s ease-in-out infinite; 
 }
 .bubble-above-top {
-    position: absolute;
     left: 84%;
     top: 9%;
     width: 4vh;
@@ -193,7 +189,6 @@
     animation: bounce 4s ease-in-out infinite; 
 }
 .bubble-right-top-corner {
-    position: absolute;
     left: 11%;
     top: 9%;
     width: 7vh;
@@ -201,7 +196,6 @@
     animation: bounce 4s ease-in-out infinite; 
 }
 .ball-on-left-from-text {
-    position: absolute;
     left: 4%;
     top: 6%;
     width: 6vh;
@@ -209,7 +203,6 @@
     animation: bounce 4s ease-in-out infinite; 
 }
 .blur-ball {
-    position: absolute;
     left: 22%;
     top: 5%;
     width: 3vh;
@@ -218,7 +211,6 @@
     animation: skew 4s ease-in-out infinite; 
 }
 .bubble-behide-text {
-    position: absolute;
     left: 22vh;
     top: -7vh;
     width: 23vh;
@@ -229,35 +221,30 @@
     animation: fly 6s ease-in-out infinite; 
 }
 .ball-above-text {
-    position: absolute;
     left: 22vh;
     top: -10vh;
     width: 4vh;
     animation: skew 4s ease-in-out infinite; 
 }
 .big-bubble {
-    position: absolute;
     left: 10vh;
     top: -19vh;
     width: 10vh;
     animation: skew 4s ease-in-out infinite; 
 }
 .small-bubble {
-    position: absolute;
     left: 17vh;
     top: -14vh;
     width: 4vh;
     animation: bounce 3s linear infinite; 
 }
 .first-bubble {
-    position: absolute;
     left: 17vh;
     top: -24vh;
     width: 3vh;
     animation: blur 4s ease-in-out infinite; 
 }
 .ball-top {
-    position: absolute;
     left: 22vh;
     top: -25%;
     width: 20vh;
@@ -309,6 +296,9 @@
             height: 20px;
         }
     }
+    //
+    //  Decoration
+    //
     .ball-on-bean {
         left: 72%;
         top: 55%;

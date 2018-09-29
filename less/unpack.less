@@ -1,7 +1,6 @@
 .unpack {
     width: 100%;
     padding: 50px;
-    // background: linear-gradient(289deg, rgb(238, 224, 201) 25%, rgba(202, 242, 241, 0) 48%);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -9,16 +8,13 @@
     justify-content: flex-end;
     position: relative;
     &-title {
-        font-family:"ff-good-headline-web-pro-ext";
-        color: #333d3c;
+        .title();
         font-size: 60px;
         font-weight: 600;
-        text-transform: uppercase;
         letter-spacing: 24px;
         letter-spacing: 28.8px;
         sup {
-            font-family:"ff-good-headline-web-pro-ext";
-            color: #868782;
+            color: @text-color;
             font-size: 18px;
             font-weight: 400;
             text-transform: uppercase;
@@ -29,8 +25,7 @@
     }
     .descr {
         width: 501px;
-        color: #868782;
-        font-family: "ff-good-headline-web-pro-ext";
+        color: @text-color;
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
@@ -50,11 +45,9 @@
     margin-bottom: 100px;
     &-title {
         height: 20px;
-        color: #333d3c;
-        font-family: "ff-good-headline-web-pro-ext";
+        .title();
         font-size: 24px;
         font-weight: 600;
-        text-transform: uppercase;
         letter-spacing: 2.4px;
         position: relative;
         margin-bottom: 20px;
@@ -74,7 +67,7 @@
     }
     p {
         width: 240px;
-        color: #868782;
+        color: @text-color;
         font-family: 'sofia-pro';
         font-size: 14px;
         font-weight: 400;

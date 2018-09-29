@@ -104,6 +104,9 @@
   justify-content: flex-end;
 }
 .select-lang a {
+  font-size: 65px;
+  letter-spacing: 8px;
+  margin-bottom: 2vh;
   font-family: "ff-good-headline-web-pro-ext";
   color: #333d3c;
   text-transform: uppercase;
@@ -123,31 +126,43 @@
   position: relative;
 }
 .sub-title {
-  color: #333d3c;
+  font-size: 65px;
+  letter-spacing: 8px;
+  margin-bottom: 2vh;
   font-family: "ff-good-headline-web-pro-ext";
+  color: #333d3c;
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
-  text-transform: uppercase;
   letter-spacing: 2.4px;
 }
 .title {
-  color: #333d3c;
   font-family: "ff-good-headline-web-pro-ext";
-  font-size: 65px;
+  color: #333d3c;
   text-transform: uppercase;
+  font-size: 65px;
   letter-spacing: 8px;
   margin-bottom: 2vh;
 }
 .work-link {
-  color: #ffffff;
+  font-size: 65px;
+  letter-spacing: 8px;
+  margin-bottom: 2vh;
   font-family: "ff-good-headline-web-pro-ext";
+  color: #333d3c;
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: 400;
-  text-transform: uppercase;
   letter-spacing: 2.4px;
   border: 2px solid #ffffff;
+  color: #fff;
   padding: 5px 15px;
   z-index: 2;
+  transition: all 500ms;
+}
+.work-link:hover {
+  color: #333d3c;
+  border: 2px solid #333d3c;
 }
 .box {
   position: relative;
@@ -182,8 +197,11 @@
   animation: bounce 2s linear infinite;
 }
 .scroll p {
-  color: #333d3c;
+  font-size: 65px;
+  letter-spacing: 8px;
+  margin-bottom: 2vh;
   font-family: "ff-good-headline-web-pro-ext";
+  color: #333d3c;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 600;
@@ -196,8 +214,10 @@
   background-color: #333d3c;
   margin: 0 auto;
 }
-.cloud {
+.decor img {
   position: absolute;
+}
+.cloud {
   left: -69vh;
   bottom: 67vh;
   width: 14vw;
@@ -205,21 +225,18 @@
   animation: bounce 4s ease-in-out infinite;
 }
 .ball-on-cloud {
-  position: absolute;
   left: -55vh;
   bottom: 75vh;
   width: 4vw;
   animation: bounce 4s ease-in-out infinite;
 }
 .ball-on-box {
-  position: absolute;
   left: 29vh;
   bottom: 81vh;
   width: 1vw;
   z-index: 2;
 }
 .ball-on-bean {
-  position: absolute;
   left: 86%;
   bottom: 79vh;
   width: 10vh;
@@ -228,7 +245,6 @@
   animation: skew 4s ease-in-out infinite;
 }
 .bubble-on-top {
-  position: absolute;
   left: 63%;
   top: 21%;
   width: 10vh;
@@ -237,7 +253,6 @@
   animation: bounce 4s ease-in-out infinite;
 }
 .bubble-above-top {
-  position: absolute;
   left: 84%;
   top: 9%;
   width: 4vh;
@@ -245,7 +260,6 @@
   animation: bounce 4s ease-in-out infinite;
 }
 .bubble-right-top-corner {
-  position: absolute;
   left: 11%;
   top: 9%;
   width: 7vh;
@@ -253,7 +267,6 @@
   animation: bounce 4s ease-in-out infinite;
 }
 .ball-on-left-from-text {
-  position: absolute;
   left: 4%;
   top: 6%;
   width: 6vh;
@@ -261,7 +274,6 @@
   animation: bounce 4s ease-in-out infinite;
 }
 .blur-ball {
-  position: absolute;
   left: 22%;
   top: 5%;
   width: 3vh;
@@ -270,7 +282,6 @@
   animation: skew 4s ease-in-out infinite;
 }
 .bubble-behide-text {
-  position: absolute;
   left: 22vh;
   top: -7vh;
   width: 23vh;
@@ -281,35 +292,30 @@
   animation: fly 6s ease-in-out infinite;
 }
 .ball-above-text {
-  position: absolute;
   left: 22vh;
   top: -10vh;
   width: 4vh;
   animation: skew 4s ease-in-out infinite;
 }
 .big-bubble {
-  position: absolute;
   left: 10vh;
   top: -19vh;
   width: 10vh;
   animation: skew 4s ease-in-out infinite;
 }
 .small-bubble {
-  position: absolute;
   left: 17vh;
   top: -14vh;
   width: 4vh;
   animation: bounce 3s linear infinite;
 }
 .first-bubble {
-  position: absolute;
   left: 17vh;
   top: -24vh;
   width: 3vh;
   animation: blur 4s ease-in-out infinite;
 }
 .ball-top {
-  position: absolute;
   left: 22vh;
   top: -25%;
   width: 20vh;
@@ -434,7 +440,6 @@
   justify-content: center;
 }
 .logos .sub {
-  font-family: "ff-good-headline-web-pro-ext";
   width: 12px;
   height: 13px;
   color: #868782;
@@ -478,7 +483,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  font-family: "ff-good-headline-web-pro-ext";
   align-items: baseline;
 }
 .people .role {
@@ -501,10 +505,14 @@
   width: 100px;
 }
 .people .name {
+  font-size: 65px;
+  letter-spacing: 8px;
+  margin-bottom: 2vh;
+  font-family: "ff-good-headline-web-pro-ext";
   color: #333d3c;
+  text-transform: uppercase;
   font-size: 24px;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 2.4px;
   margin-left: 3px;
 }
@@ -1212,6 +1220,11 @@
     filter: blur(0);
   }
 }
+.title {
+  font-family: "ff-good-headline-web-pro-ext";
+  color: #333d3c;
+  text-transform: uppercase;
+}
 * {
   margin: 0;
   padding: 0;
@@ -1222,6 +1235,10 @@ a {
 }
 li {
   list-style: none;
+}
+html {
+  font-family: "ff-good-headline-web-pro-ext";
+  color: #333d3c;
 }
 .grid-parent {
   background: linear-gradient(90deg, #caf2f1 69%, #eee0c9 89%);
