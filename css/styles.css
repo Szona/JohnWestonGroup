@@ -7,6 +7,7 @@
   position: fixed;
   right: 0;
   top: 45vh;
+  z-index: 2;
 }
 .hamburger-menu,
 .hamburger-menu:after,
@@ -150,12 +151,15 @@
 }
 .box {
   position: relative;
-  bottom: 20vh;
   z-index: 1;
+  bottom: 20vh;
+  margin: 0 auto;
+  width: 100%;
 }
 .box img {
-  height: 80vh;
-  margin: 0 auto;
+  width: 100%;
+  max-width: none;
+  height: auto;
 }
 .box-shadow {
   position: relative;
@@ -169,10 +173,13 @@
   margin: 0 auto;
 }
 .scroll {
-  position: absolute;
-  top: 38%;
-  left: 40.5%;
+  width: 20%;
+  position: relative;
+  top: -100vh;
+  left: -5vh;
   z-index: 2;
+  margin: 0 auto;
+  animation: bounce 2s linear infinite;
 }
 .scroll p {
   color: #333d3c;
@@ -185,7 +192,7 @@
 }
 .scroll .vertical-line {
   width: 2px;
-  height: 85px;
+  height: 70px;
   background-color: #333d3c;
   margin: 0 auto;
 }
@@ -195,12 +202,14 @@
   bottom: 67vh;
   width: 14vw;
   opacity: 0.8;
+  animation: bounce 4s ease-in-out infinite;
 }
 .ball-on-cloud {
   position: absolute;
   left: -55vh;
   bottom: 75vh;
   width: 4vw;
+  animation: bounce 4s ease-in-out infinite;
 }
 .ball-on-box {
   position: absolute;
@@ -216,6 +225,7 @@
   width: 10vh;
   opacity: 0.7;
   z-index: 2;
+  animation: skew 4s ease-in-out infinite;
 }
 .bubble-on-top {
   position: absolute;
@@ -224,6 +234,7 @@
   width: 10vh;
   opacity: 0.8;
   z-index: 2;
+  animation: bounce 4s ease-in-out infinite;
 }
 .bubble-above-top {
   position: absolute;
@@ -231,6 +242,7 @@
   top: 9%;
   width: 4vh;
   z-index: 2;
+  animation: bounce 4s ease-in-out infinite;
 }
 .bubble-right-top-corner {
   position: absolute;
@@ -238,6 +250,7 @@
   top: 9%;
   width: 7vh;
   z-index: 2;
+  animation: bounce 4s ease-in-out infinite;
 }
 .ball-on-left-from-text {
   position: absolute;
@@ -245,6 +258,7 @@
   top: 6%;
   width: 6vh;
   z-index: 2;
+  animation: bounce 4s ease-in-out infinite;
 }
 .blur-ball {
   position: absolute;
@@ -253,6 +267,7 @@
   width: 3vh;
   filter: blur(2px);
   z-index: 2;
+  animation: skew 4s ease-in-out infinite;
 }
 .bubble-behide-text {
   position: absolute;
@@ -263,46 +278,52 @@
   filter: blur(1px);
   transform: rotate(-20deg);
   z-index: -1;
+  animation: fly 6s ease-in-out infinite;
 }
 .ball-above-text {
   position: absolute;
   left: 22vh;
   top: -10vh;
   width: 4vh;
+  animation: skew 4s ease-in-out infinite;
 }
 .big-bubble {
   position: absolute;
   left: 10vh;
   top: -19vh;
   width: 10vh;
+  animation: skew 4s ease-in-out infinite;
 }
 .small-bubble {
   position: absolute;
   left: 17vh;
   top: -14vh;
   width: 4vh;
+  animation: bounce 3s linear infinite;
 }
 .first-bubble {
   position: absolute;
   left: 17vh;
   top: -24vh;
   width: 3vh;
+  animation: blur 4s ease-in-out infinite;
 }
 .ball-top {
   position: absolute;
   left: 22vh;
   top: -25%;
   width: 20vh;
+  animation: skew 4s ease-in-out infinite;
 }
 @media screen and (max-width: 450px) {
   .header {
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     padding: 30px  15px 0 15px;
   }
   .header-content {
     width: 95%;
-    margin-top: 12vh;
+    margin-top: 15vh;
   }
   .social-media {
     display: none;
@@ -318,11 +339,8 @@
     border: 1px solid #ffffff;
   }
   .box {
-    bottom: 5vh;
-    margin: 0 auto;
-  }
-  .box img {
-    height: 49vh;
+    bottom: 8vh;
+    width: 100%;
   }
   .box-shadow {
     left: -2vh;
@@ -332,33 +350,35 @@
     height: 24vh;
   }
   .scroll {
-    top: 53%;
-    left: 33%;
+    top: -50vh;
+    left: -2.5vh;
+    width: 29%;
   }
   .scroll p {
     font-size: 10px;
   }
   .scroll .vertical-line {
+    width: 1px;
     height: 20px;
   }
   .ball-on-bean {
-    left: 45vh;
-    bottom: 33vh;
+    left: 72%;
+    top: 55%;
     width: 8vh;
   }
   .bubble-on-top {
     left: 58%;
-    top: 43%;
+    top: 36%;
     width: 6vh;
   }
   .bubble-above-top {
-    left: 70%;
-    top: 35%;
+    left: 79%;
+    top: 31%;
     width: 2vh;
   }
   .bubble-right-top-corner {
     left: 13%;
-    top: 30%;
+    top: 27%;
     width: 5vh;
   }
   .ball-on-left-from-text {
@@ -391,7 +411,7 @@
   }
   .ball-top {
     left: 43%;
-    top: -23%;
+    top: -27%;
     width: 11vh;
   }
 }
@@ -432,6 +452,7 @@
 }
 .logos .logo-sansara {
   margin-right: 17vh;
+  animation: bounce 7s ease-in-out infinite;
 }
 .description {
   height: 400px;
@@ -506,6 +527,7 @@
   background: url("../img/metal-ball.png");
   background-size: cover;
   position: relative;
+  animation: bounce 4s ease-in-out infinite;
 }
 .small-ball.one {
   bottom: 74vh;
@@ -523,6 +545,7 @@
   position: relative;
   bottom: 44vh;
   left: -21vw;
+  animation: skew 4s ease-in-out infinite;
 }
 .slider-cloud {
   position: absolute;
@@ -535,6 +558,7 @@
   -webkit-filter: blur(5px);
   filter: blur(5px);
   width: 20%;
+  animation: bounce 4s ease-in-out infinite;
 }
 @media screen and (max-width: 450px) {
   .about {
@@ -542,7 +566,7 @@
     background: linear-gradient(241deg, #eee0c9 14%, rgba(202, 242, 241, 0) 30%);
   }
   .logos {
-    margin-top: 150px;
+    margin-top: 200px;
     height: 200px;
   }
   .logos .logo2 {
@@ -558,14 +582,14 @@
     left: -60%;
   }
   .logos .sub {
-    top: -110px;
-    left: 135px;
+    top: -69%;
+    left: 100%;
     font-size: 14px;
   }
   .logos .bigger-ball {
     width: 30px;
     height: 30px;
-    bottom: 13vh;
+    bottom: 8vh;
     left: 15vw;
   }
   .logos .small-ball {
@@ -689,6 +713,7 @@
   height: 60px;
   background: url("../img/ball-of-wibbly-wobbly-timey-wimey-stuff.png");
   background-size: cover;
+  animation: skew 4s ease-in-out infinite;
 }
 @media screen and (max-width: 450px) {
   .carusel {
@@ -697,6 +722,9 @@
     margin-top: 120px;
     flex-direction: column;
     padding-bottom: 0;
+  }
+  .carusel .carusel-text {
+    flex-basis: 42%;
   }
   .carusel .carusel-text p {
     text-align: left;
@@ -812,6 +840,7 @@
 }
 .comfort img {
   right: 450px;
+  animation: fly 4s ease-in-out infinite;
 }
 .safe {
   margin-left: 25vw;
@@ -820,6 +849,7 @@
   left: 282px;
   bottom: -15px;
   z-index: 2;
+  animation: bounce 4s ease-in-out infinite;
 }
 .safe p {
   width: 263px;
@@ -829,6 +859,7 @@
 }
 .appreciation img {
   right: 450px;
+  animation: skew 4s ease-in-out infinite;
 }
 .counting {
   margin-left: 59vw;
@@ -836,6 +867,7 @@
 .counting img {
   width: 200px;
   right: 450px;
+  animation: blur 4s ease-in-out infinite;
 }
 .counting p {
   width: 237px;
@@ -847,6 +879,7 @@
   width: 300px;
   right: 450px;
   bottom: -90px;
+  animation: fly 4s ease-in-out infinite;
 }
 .success {
   width: 300px;
@@ -856,6 +889,7 @@
   width: 250px;
   right: 250px;
   top: 50px;
+  animation: bounce 4s ease-in-out infinite;
 }
 .success p {
   width: 263px;
@@ -867,6 +901,7 @@
   width: 2%;
   top: 21%;
   left: 31%;
+  animation: bounce 4s ease-in-out infinite;
 }
 .bubbles-and-balls img.two {
   width: 5%;
@@ -881,17 +916,20 @@
   right: 8%;
   filter: blur(6px);
   transform: rotate(-33deg);
+  animation: bounce 4s ease-in-out infinite;
 }
 .bubbles-and-balls img.four {
   width: 3%;
   top: 22%;
   right: 8%;
   transform: rotate(59deg);
+  animation: blur 4s ease-in infinite;
 }
 .bubbles-and-balls img.five {
   width: 3%;
   top: 44%;
   left: 21%;
+  animation: bounce 4s ease-in-out infinite;
 }
 .bubbles-and-balls img.six {
   width: 2%;
@@ -903,18 +941,20 @@
   top: 40%;
   right: 21%;
   z-index: 1;
+  animation: bounce 4s ease-in-out infinite;
 }
 .bubbles-and-balls img.eight {
   width: 2%;
   top: 47%;
   right: 23%;
+  animation: bounce 4s ease-in-out infinite;
 }
 .bubbles-and-balls img.nine {
-  width: 13%;
-  height: 10%;
+  width: 15%;
   top: 47%;
-  right: 3%;
+  right: 1%;
   transform: rotate(105deg) scale(1, -1);
+  animation: blur 4s ease-in infinite;
 }
 .bubbles-and-balls img.ten {
   width: 15%;
@@ -923,6 +963,7 @@
   opacity: 0.8;
   filter: blur(6px);
   transform: rotate(105deg) scale(1, -1);
+  animation: bounce 4s ease-in-out infinite;
 }
 .bubbles-and-balls img.eleven {
   width: 1%;
@@ -930,16 +971,19 @@
   left: 15%;
   opacity: 0.8;
   filter: blur(1px);
+  animation: bounce 4s ease-in-out infinite;
 }
 .bubbles-and-balls img.twelve {
   width: 2%;
   top: 65%;
   left: 20%;
+  animation: skew 4s ease-in-out infinite;
 }
 .bubbles-and-balls img.thirteen {
   width: 1%;
   top: 74%;
   right: 20%;
+  animation: bounce 4s ease-in-out infinite;
 }
 .bubbles-and-balls img.fourteen {
   width: 5%;
@@ -947,6 +991,7 @@
   left: 17%;
   opacity: 0.8;
   filter: blur(1px);
+  animation: bounce 4s ease-in-out infinite;
 }
 .bubbles-and-balls img.fifteen {
   width: 4%;
@@ -954,6 +999,7 @@
   left: 16%;
   opacity: 0.8;
   filter: blur(1px);
+  animation: fly 4s ease-in-out infinite;
 }
 .bubbles-and-balls img.sixteen {
   width: 5%;
@@ -962,6 +1008,7 @@
   opacity: 0.8;
   filter: blur(3px);
   transform: rotate(90deg);
+  animation: fly 4s ease-in-out infinite;
 }
 .bubbles-and-balls img.seventeen {
   width: 3%;
@@ -969,6 +1016,7 @@
   right: 15%;
   opacity: 0.8;
   filter: blur(1px);
+  animation: skew 4s ease-in-out infinite;
 }
 @media screen and (max-width: 450px) {
   .unpack {
@@ -979,6 +1027,9 @@
     text-align: center;
     letter-spacing: 20px;
   }
+  .unpack-title sup {
+    top: 0;
+  }
   .unpack .descr {
     width: 300px;
     margin-bottom: 75px;
@@ -987,7 +1038,7 @@
     width: auto;
   }
   .block-title::before {
-    top: 7vh;
+    top: 150%;
   }
   .block p {
     width: 240px;
@@ -998,29 +1049,29 @@
   .comfort img {
     right: 154px;
     top: -37px;
-    width: 32vh;
+    width: 25vh;
   }
   .safe {
     margin-left: 0;
   }
   .safe img {
-    left: 176px;
-    bottom: 102px;
-    width: 20vh;
+    left: 77%;
+    bottom: 118px;
+    width: 14vh;
   }
   .appreciation {
     margin-right: 0;
   }
   .appreciation img {
     right: 132px;
-    width: 13vh;
+    width: 10vh;
     top: -68px;
   }
   .counting {
     margin-left: 0;
   }
   .counting img {
-    width: 25vh;
+    width: 18vh;
     right: 50px;
     top: -75px;
   }
@@ -1028,7 +1079,7 @@
     margin-left: 0;
   }
   .enthusiasm img {
-    width: 33vh;
+    width: 28vh;
     right: -3vh;
     bottom: 88px;
   }
@@ -1036,9 +1087,129 @@
     margin-left: 0;
   }
   .success img {
-    width: 30vh;
+    width: 22vh;
     right: 50px;
     top: -80px;
+  }
+  .nine {
+    right: -3%;
+  }
+  .bubbles-and-balls img {
+    position: absolute;
+  }
+  .bubbles-and-balls img.one {
+    width: 6%;
+    top: 17%;
+  }
+  .bubbles-and-balls img.two {
+    width: 9%;
+  }
+  .bubbles-and-balls img.three {
+    width: 18%;
+    filter: blur(3px);
+  }
+  .bubbles-and-balls img.four {
+    width: 6%;
+    top: 21%;
+    right: 12%;
+  }
+  .bubbles-and-balls img.five {
+    width: 6%;
+    top: 43%;
+    left: 7%;
+  }
+  .bubbles-and-balls img.six {
+    width: 6%;
+  }
+  .bubbles-and-balls img.seven {
+    width: 25%;
+    top: 34%;
+    right: 15%;
+    transform: rotate(17deg);
+  }
+  .bubbles-and-balls img.eight {
+    width: 7%;
+    top: 45%;
+  }
+  .bubbles-and-balls img.nine {
+    width: 15%;
+    top: 49%;
+    right: 0%;
+    z-index: 1;
+  }
+  .bubbles-and-balls img.twelve {
+    width: 4%;
+    top: 69%;
+  }
+  .bubbles-and-balls img.eleven {
+    width: 3%;
+    top: 62%;
+    left: 57%;
+  }
+  .bubbles-and-balls img.thirteen {
+    width: 4%;
+    top: 86%;
+    right: 8%;
+  }
+  .bubbles-and-balls img.fourteen {
+    width: 11%;
+    top: 97%;
+  }
+  .bubbles-and-balls img.fifteen {
+    width: 7%;
+    top: 98%;
+  }
+  .bubbles-and-balls img.sixteen {
+    top: 67%;
+    right: 18%;
+  }
+  .bubbles-and-balls img.seventeen {
+    width: 9%;
+    top: 83%;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes skew {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(15px, 15px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes fly {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(-25px, 0);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes blur {
+  0% {
+    filter: blur(0);
+  }
+  50% {
+    filter: blur(4px);
+  }
+  100% {
+    filter: blur(0);
   }
 }
 * {

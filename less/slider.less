@@ -76,8 +76,9 @@
         right: 20%;
         width: 60px;
         height: 60px;
-        background: url("../img/slider-ball.png");
+        background: url("../img/ball-of-wibbly-wobbly-timey-wimey-stuff.png");
         background-size: cover;
+        animation: skew 4s ease-in-out infinite; 
     }
 }
 @media screen and (max-width: 450px) {
@@ -88,6 +89,7 @@
         flex-direction: column;
         padding-bottom: 0;
         .carusel-text {
+            flex-basis: 42%;
             p {
                 text-align: left;
                 font-size: 14px;

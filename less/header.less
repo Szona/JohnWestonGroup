@@ -99,22 +99,20 @@
 }
 .box {
     position: relative;
-    bottom: 20vh;
     z-index: 1;
-    // background: url(../img/box.png);
-    // background-size: cover;
-    // width: 113%;
-    // height: 112%;
+    bottom: 20vh;
+    margin: 0 auto;
+    width: 100%;
     img {
-        height: 80vh;
-        margin: 0 auto;
+        width: 100%;
+        max-width: none;
+        height: auto;
     }
  }
 .box-shadow {
     position: relative;
     bottom: 50vh;
     left: -7vh;
-
     z-index: -1;
     opacity: 0.8;
     img {
@@ -123,10 +121,13 @@
     }
 }
 .scroll {
-    position: absolute;
-    top: 38%;
-    left: 40.5%;
+    width: 20%;
+    position: relative;
+    top: -100vh;
+    left: -5vh;
     z-index: 2;
+    margin: 0 auto;
+    animation: bounce 2s linear infinite;
     p {
         color: #333d3c;
         font-family:"ff-good-headline-web-pro-ext";
@@ -138,7 +139,7 @@
     }
     .vertical-line {
         width: 2px;
-        height: 85px;
+        height: 70px;
         background-color: #333d3c;
         margin: 0 auto;
     }
@@ -149,12 +150,14 @@
     bottom: 67vh;
     width: 14vw;
     opacity: 0.8;
+    animation: bounce 4s ease-in-out infinite; 
 }
 .ball-on-cloud {
     position: absolute;
     left: -55vh;
     bottom: 75vh;
     width: 4vw;
+    animation: bounce 4s ease-in-out infinite; 
 }
 .ball-on-box {
     position: absolute;
@@ -170,6 +173,7 @@
     width: 10vh;
     opacity: 0.7;
     z-index: 2; 
+    animation: skew 4s ease-in-out infinite;  
 }
 .bubble-on-top {
     position: absolute;
@@ -178,13 +182,15 @@
     width: 10vh;
     opacity: 0.8;
     z-index: 2;
+    animation: bounce 4s ease-in-out infinite; 
 }
 .bubble-above-top {
     position: absolute;
-    left: 84vh;
-    top: 25vh;
+    left: 84%;
+    top: 9%;
     width: 4vh;
     z-index: 2;
+    animation: bounce 4s ease-in-out infinite; 
 }
 .bubble-right-top-corner {
     position: absolute;
@@ -192,6 +198,7 @@
     top: 9%;
     width: 7vh;
     z-index: 2;
+    animation: bounce 4s ease-in-out infinite; 
 }
 .ball-on-left-from-text {
     position: absolute;
@@ -199,6 +206,7 @@
     top: 6%;
     width: 6vh;
     z-index: 2;
+    animation: bounce 4s ease-in-out infinite; 
 }
 .blur-ball {
     position: absolute;
@@ -207,6 +215,7 @@
     width: 3vh;
     filter: blur(2px);
     z-index: 2;
+    animation: skew 4s ease-in-out infinite; 
 }
 .bubble-behide-text {
     position: absolute;
@@ -217,46 +226,52 @@
     filter: blur(1px);
     transform: rotate(-20deg);
     z-index: -1;
+    animation: fly 6s ease-in-out infinite; 
 }
 .ball-above-text {
     position: absolute;
     left: 22vh;
     top: -10vh;
     width: 4vh;
+    animation: skew 4s ease-in-out infinite; 
 }
 .big-bubble {
     position: absolute;
     left: 10vh;
     top: -19vh;
     width: 10vh;
+    animation: skew 4s ease-in-out infinite; 
 }
 .small-bubble {
     position: absolute;
     left: 17vh;
     top: -14vh;
     width: 4vh;
+    animation: bounce 3s linear infinite; 
 }
 .first-bubble {
     position: absolute;
     left: 17vh;
     top: -24vh;
     width: 3vh;
+    animation: blur 4s ease-in-out infinite; 
 }
 .ball-top {
     position: absolute;
     left: 22vh;
     top: -25%;
     width: 20vh;
+    animation: skew 4s ease-in-out infinite; 
 }
  @media screen and (max-width: 450px) {
      .header {
          width: 100%;
-         height: 80vh;
+         height: 70vh;
          padding: 30px  15px 0 15px;
      }
      .header-content {
         width: 95%;
-        margin-top: 12vh;
+        margin-top: 15vh;
     }
     .social-media {
         display: none;
@@ -272,11 +287,8 @@
         border: 1px solid #ffffff;
     }
     .box {
-        bottom: 5vh;
-        margin: 0 auto;
-        img {
-            height: 49vh;
-        }
+        bottom: 8vh;   
+        width: 100%;
     }
     .box-shadow {
         left: -2vh;
@@ -286,33 +298,35 @@
         }
     }
     .scroll {
-        top: 53%;
-        left: 33%; 
+        top: -50vh;
+        left: -2.5vh;
+        width: 29%;
         p {
             font-size: 10px;
         }
         .vertical-line {
+            width: 1px;
             height: 20px;
         }
     }
     .ball-on-bean {
-        left: 45vh;
-        bottom: 33vh;
+        left: 72%;
+        top: 55%;
         width: 8vh;
     }
     .bubble-on-top {
         left: 58%;
-        top: 43%;
+        top: 36%;
         width: 6vh;
     }
     .bubble-above-top {
-        left: 70%;
-        top: 35%;
+        left: 79%;
+        top: 31%;
         width: 2vh;
     }
     .bubble-right-top-corner {
         left: 13%;
-        top: 30%;
+        top: 27%;
         width: 5vh;
     }
     .ball-on-left-from-text {
@@ -345,7 +359,7 @@
     }
     .ball-top {
         left: 43%;
-        top: -23%;
+        top: -27%;
         width: 11vh;
     }
  }

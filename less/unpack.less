@@ -87,6 +87,7 @@
     margin-left: 7vw;
     img {
         right: 450px;
+        animation: fly 4s ease-in-out infinite; 
     }
 }
 .safe {
@@ -94,7 +95,8 @@
     img {
         left: 282px;
         bottom: -15px; 
-        z-index: 2;       
+        z-index: 2;  
+        animation: bounce 4s ease-in-out infinite;     
     }
     p {
         width: 263px;
@@ -104,6 +106,7 @@
     margin-right: 8vw;
     img {
         right: 450px;
+        animation: skew 4s ease-in-out infinite; 
     }
 }
 .counting {
@@ -111,6 +114,7 @@
     img {
         width: 200px;
         right: 450px;
+        animation: blur 4s ease-in-out infinite; 
     }
     p {
         width: 237px;
@@ -122,6 +126,7 @@
         width: 300px;
         right: 450px;
         bottom: -90px;
+        animation: fly 4s ease-in-out infinite; 
         }
 }
 .success {
@@ -130,7 +135,8 @@
     img {
         width: 250px;
         right: 250px;
-        top: 50px;        
+        top: 50px; 
+        animation: bounce 4s ease-in-out infinite;       
     }
     p {
         width: 263px;
@@ -143,6 +149,7 @@
             width: 2%;
             top: 21%;
             left: 31%;
+            animation: bounce 4s ease-in-out infinite;
         }
         &.two {
             width: 5%;
@@ -157,17 +164,20 @@
             right: 8%;
             filter: blur(6px);
             transform: rotate(-33deg);
+            animation: bounce 4s ease-in-out infinite; 
         }
         &.four {
             width: 3%;
             top: 22%;
             right: 8%;
             transform: rotate(59deg);
+            animation: blur 4s ease-in infinite;
         }
         &.five {
             width: 3%;
             top: 44%;
             left: 21%;
+            animation: bounce 4s ease-in-out infinite;
         }
         &.six {
             width: 2%;
@@ -179,18 +189,20 @@
             top: 40%;
             right: 21%;
             z-index: 1;
+            animation: bounce 4s ease-in-out infinite;
         }
         &.eight {
             width: 2%;
             top: 47%;
             right: 23%;
+            animation: bounce 4s ease-in-out infinite; 
         }
         &.nine {
-            width: 13%;
-            height: 10%;
+            width: 15%;
             top: 47%;
-            right: 3%;
+            right: 1%;
             transform: rotate(105deg) scale(1, -1);
+            animation: blur 4s ease-in infinite;
         }
         &.ten {
             width: 15%;
@@ -199,6 +211,7 @@
             opacity: 0.8;
             filter: blur(6px);
             transform: rotate(105deg) scale(1, -1);
+            animation: bounce 4s ease-in-out infinite; 
         }
         &.eleven {
             width: 1%;
@@ -206,16 +219,19 @@
             left: 15%;
             opacity: 0.8;
             filter: blur(1px);
+            animation: bounce 4s ease-in-out infinite;
         }
         &.twelve {
             width: 2%;
             top: 65%;
             left: 20%;
+            animation: skew 4s ease-in-out infinite; 
         }
         &.thirteen {
             width: 1%;
             top: 74%;
             right: 20%;
+            animation: bounce 4s ease-in-out infinite; 
         }
         &.fourteen {
             width: 5%;
@@ -223,6 +239,7 @@
             left: 17%;
             opacity: 0.8;
             filter: blur(1px);
+            animation: bounce 4s ease-in-out infinite; 
         }
         &.fifteen {
             width: 4%;
@@ -230,6 +247,7 @@
             left: 16%;
             opacity: 0.8;
             filter: blur(1px);
+            animation: fly 4s ease-in-out infinite; 
         }
         &.sixteen {
             width: 5%;
@@ -238,6 +256,7 @@
             opacity: 0.8;
             filter: blur(3px);
             transform: rotate(90deg);
+            animation: fly 4s ease-in-out infinite; 
         }
         &.seventeen {
             width: 3%;
@@ -246,6 +265,7 @@
             opacity: 0.8;
             filter: blur(1px);
             // transform: rotate(90deg);
+            animation: skew 4s ease-in-out infinite; 
         }
     }
 }
@@ -258,6 +278,9 @@
             font-size: 44px;
             text-align: center;
             letter-spacing: 20px;
+            sup {
+                top: 0;
+            }
         }
         .descr {
             width: 300px;
@@ -268,7 +291,7 @@
         width: auto;
         &-title {
             &::before {
-                top: 7vh;
+                top: 150%;
             }
         }
         p {
@@ -280,29 +303,29 @@
     img {
         right: 154px;
         top: -37px;
-        width: 32vh;
+        width: 25vh;
         }
     }
     .safe {
         margin-left: 0;
         img {
-            left: 176px;
-            bottom: 102px;
-            width: 20vh;       
+            left: 77%;
+            bottom: 118px;
+            width: 14vh;      
         }
     }
     .appreciation {
         margin-right: 0;
         img {
             right: 132px;
-            width: 13vh;
+            width: 10vh;
             top: -68px;
         }
     }
     .counting {
         margin-left: 0;
         img {
-            width: 25vh;
+            width: 18vh;
             right: 50px;
             top: -75px;
         }
@@ -310,7 +333,7 @@
     .enthusiasm {
         margin-left: 0;
         img {
-            width: 33vh;
+            width: 28vh;
             right: -3vh;
             bottom: 88px;
         }
@@ -318,9 +341,88 @@
     .success {
         margin-left: 0;
         img {
-            width: 30vh;
+            width: 22vh;
             right: 50px;
             top: -80px;       
         }
     }
+    .nine {
+        right: -3%;
+    }
+    .bubbles-and-balls {
+        img {
+            position: absolute;
+            &.one {
+                width: 6%;
+                top: 17%;
+            }
+            &.two {
+                width: 9%;
+            }
+            &.three {
+                width: 18%;
+                filter: blur(3px);
+            }
+            &.four {
+                width: 6%;
+                top: 21%;
+                right: 12%;
+            }
+            &.five {
+                width: 6%;
+                top: 43%;
+                left: 7%;
+            }
+            &.six {
+                width: 6%;
+            }
+            &.seven {
+                width: 25%;
+                top: 34%;
+                right: 15%;
+                transform: rotate(17deg);
+            }
+            &.eight {
+                width: 7%;
+                top: 45%;
+            }
+            &.nine {
+                width: 15%;
+                top: 49%;
+                right: 0%;
+                z-index: 1;
+            }
+            &.twelve {
+                width: 4%;
+                top: 69%;
+            }
+            &.eleven {
+                width: 3%;
+                top: 62%;
+                left: 57%;
+            }
+            &.thirteen {
+                width: 4%;
+                top: 86%;
+                right: 8%;
+            }
+            &.fourteen {
+                width: 11%;
+                top: 97%;
+            }
+            &.fifteen {
+                width: 7%;
+                top: 98%;
+            }
+            &.sixteen {
+                top: 67%;
+                right: 18%;
+            }
+            &.seventeen {
+                width: 9%;
+                top: 83%;
+            }
+        }
+    }
 }
+

@@ -34,6 +34,7 @@
     }
     .logo-sansara {
          margin-right: 17vh;
+         animation: bounce 7s ease-in-out infinite; 
     }
 }
 .description {
@@ -110,6 +111,7 @@
     background: url("../img/metal-ball.png");
     background-size: cover;
     position: relative;
+    animation: bounce 4s ease-in-out infinite; 
     &.one {
         bottom: 74vh;
         left: -15vw;
@@ -127,15 +129,21 @@
     position: relative;
     bottom: 44vh;
     left: -21vw;
+    animation: skew 4s ease-in-out infinite; 
+
 }
 .slider-cloud {
         position: absolute;
         bottom: 58%;
-        left: -28%;
+        left: 0;
         z-index: 1;
         opacity: 0.7;
-        filter: blur(3px);
-        // height: 50vh;
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -webkit-filter: blur(5px);
+        filter: blur(5px);
+        width: 20%;
+        animation: bounce 4s ease-in-out infinite; 
     }
 @media screen and (max-width: 450px) {
     .about {
@@ -143,7 +151,7 @@
         background: linear-gradient(241deg, rgb(238, 224, 201) 14%, rgba(202, 242, 241, 0) 30%);
     }
     .logos {
-        margin-top: 150px;
+        margin-top: 200px;
         height: 200px;
         .logo2 {
             width: 25vh;
@@ -158,14 +166,14 @@
             left: -60%;
         }
         .sub {
-            top: -110px;
-            left: 135px;
+            top: -69%;
+            left: 100%;
             font-size: 14px;
         }
         .bigger-ball {
             width: 30px;
             height: 30px;
-            bottom: 13vh;
+            bottom: 8vh;
             left: 15vw;
         }
         .small-ball {
