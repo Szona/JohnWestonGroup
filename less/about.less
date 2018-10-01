@@ -144,6 +144,7 @@
     }
 @media screen and (max-width: 450px) {
     .about {
+        width: 100%;
         padding: 0 15px;
         background: linear-gradient(241deg, rgb(238, 224, 201) 14%, rgba(202, 242, 241, 0) 30%);
     }
@@ -212,5 +213,54 @@
     .slider-cloud {
         top: 53%;
         height: 24vh;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .about {
+        background: linear-gradient(241deg, rgb(238, 224, 201) 26%, rgba(202, 242, 241, 0) 41%);
+    }
+    .small-ball.one {
+        left: 45vw;
+        bottom: 0;
+    }
+    .small-ball.two {
+        top: -4vh;
+        left: 4vw;
+    }
+    .bigger-ball {
+        bottom: -8vh;
+        left: 33vw;
+    }
+    .logos {
+        height: 100px;
+        flex-wrap: nowrap;
+        margin-bottom: 150px;
+        margin-top: 200px;
+        .logo-sansara {
+            order: 1;
+        }
+        sup {
+            left: 0;
+        }
+    }
+    .logos .logo2 {
+        // margin-right: 0; 
+        margin-bottom: 0; 
+        order: 2;
+    }
+    .description {
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .about {
+        padding-top: 200px;
+    }
+    .slider-cloud {
+        bottom: 44%;
+    }
+    .small-ball.two {
+        top: -18vh;
+        left: -7vw;
     }
 }

@@ -29,11 +29,17 @@ html {
     position: relative;
 }
 .gradient-background {
+    width: 100%;
     background: linear-gradient(289deg, rgb(238, 224, 201) 25%, rgba(202, 242, 241, 0) 48%);
 
 }
 @media screen and (max-width: 450px) {
     .gradient-background {
         padding: 0 15px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .grid-parent {
+        overflow-x: hidden;
     }
 }

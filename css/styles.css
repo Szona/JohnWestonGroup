@@ -421,6 +421,58 @@
     width: 11vh;
   }
 }
+@media screen and (max-width: 1024px) {
+  .header {
+    height: 70vh;
+  }
+  .header-content {
+    width: 95%;
+    margin-top: 20vh;
+  }
+  .box {
+    bottom: 10vh;
+  }
+  .box-shadow {
+    left: -5vh;
+    bottom: 30vh;
+  }
+  .box-shadow img {
+    height: 30vh;
+  }
+  .scroll {
+    top: -66vh;
+    left: -3vh;
+  }
+  .scroll p {
+    text-align: center;
+  }
+  .ball-top {
+    top: -35%;
+  }
+  .ball-on-bean {
+    left: 74%;
+    bottom: 52vh;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header-content {
+    width: 860px;
+  }
+  .scroll {
+    top: -105vh;
+    left: -6vh;
+  }
+  .scroll p {
+    text-align: center;
+  }
+  .ball-on-bean {
+    left: 72%;
+    bottom: 92vh;
+  }
+  .ball-top {
+    top: -20%;
+  }
+}
 .about {
   width: 100%;
   padding: 50px;
@@ -570,6 +622,7 @@
 }
 @media screen and (max-width: 450px) {
   .about {
+    width: 100%;
     padding: 0 15px;
     background: linear-gradient(241deg, #eee0c9 14%, rgba(202, 242, 241, 0) 30%);
   }
@@ -640,6 +693,54 @@
     height: 24vh;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .about {
+    background: linear-gradient(241deg, #eee0c9 26%, rgba(202, 242, 241, 0) 41%);
+  }
+  .small-ball.one {
+    left: 45vw;
+    bottom: 0;
+  }
+  .small-ball.two {
+    top: -4vh;
+    left: 4vw;
+  }
+  .bigger-ball {
+    bottom: -8vh;
+    left: 33vw;
+  }
+  .logos {
+    height: 100px;
+    flex-wrap: nowrap;
+    margin-bottom: 150px;
+    margin-top: 200px;
+  }
+  .logos .logo-sansara {
+    order: 1;
+  }
+  .logos sup {
+    left: 0;
+  }
+  .logos .logo2 {
+    margin-bottom: 0;
+    order: 2;
+  }
+  .description {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .about {
+    padding-top: 200px;
+  }
+  .slider-cloud {
+    bottom: 44%;
+  }
+  .small-ball.two {
+    top: -18vh;
+    left: -7vw;
+  }
+}
 .carusel {
   width: 70%;
   height: 220px;
@@ -671,13 +772,16 @@
   display: block;
 }
 .carusel .carusel-title {
+  font-size: 65px;
+  letter-spacing: 8px;
+  margin-bottom: 2vh;
+  font-family: "ff-good-headline-web-pro-ext";
+  color: #333d3c;
+  text-transform: uppercase;
   height: 150px;
   align-self: center;
   flex-basis: 45%;
-  color: #333d3c;
-  font-family: "ff-good-headline-web-pro-ext";
   font-weight: 600;
-  text-transform: uppercase;
   border-left: 1px solid #333d3c;
   padding-left: 8%;
   display: flex;
@@ -759,6 +863,11 @@
     height: 40px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .carusel {
+    width: 94%;
+  }
+}
 .unpack {
   width: 100%;
   padding: 50px;
@@ -770,16 +879,18 @@
   position: relative;
 }
 .unpack-title {
+  font-size: 65px;
+  letter-spacing: 8px;
+  margin-bottom: 2vh;
   font-family: "ff-good-headline-web-pro-ext";
   color: #333d3c;
+  text-transform: uppercase;
   font-size: 60px;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 24px;
   letter-spacing: 28.8px;
 }
 .unpack-title sup {
-  font-family: "ff-good-headline-web-pro-ext";
   color: #868782;
   font-size: 18px;
   font-weight: 400;
@@ -791,7 +902,6 @@
 .unpack .descr {
   width: 501px;
   color: #868782;
-  font-family: "ff-good-headline-web-pro-ext";
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -811,11 +921,14 @@
 }
 .block-title {
   height: 20px;
-  color: #333d3c;
+  font-size: 65px;
+  letter-spacing: 8px;
+  margin-bottom: 2vh;
   font-family: "ff-good-headline-web-pro-ext";
+  color: #333d3c;
+  text-transform: uppercase;
   font-size: 24px;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 2.4px;
   position: relative;
   margin-bottom: 20px;
@@ -1028,6 +1141,7 @@
 }
 @media screen and (max-width: 450px) {
   .unpack {
+    width: 100%;
     padding: 0;
   }
   .unpack-title {
@@ -1176,6 +1290,38 @@
     top: 83%;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .unpack {
+    width: 89%;
+  }
+  .unpack-title {
+    text-align: center;
+  }
+  .comfort {
+    margin-left: 17vh;
+  }
+  .comfort img {
+    right: 90%;
+    top: -79%;
+  }
+  .appreciation {
+    margin-left: 6vh;
+  }
+  .appreciation img {
+    right: 106%;
+    top: -80%;
+  }
+  .counting {
+    margin-left: 71vw;
+  }
+  .enthusiasm {
+    margin-left: 27vw;
+  }
+  .bubbles-and-balls img.seven {
+    top: 43%;
+    right: 11%;
+  }
+}
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -1245,10 +1391,16 @@ html {
   position: relative;
 }
 .gradient-background {
+  width: 100%;
   background: linear-gradient(289deg, #eee0c9 25%, rgba(202, 242, 241, 0) 48%);
 }
 @media screen and (max-width: 450px) {
   .gradient-background {
     padding: 0 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .grid-parent {
+    overflow-x: hidden;
   }
 }
